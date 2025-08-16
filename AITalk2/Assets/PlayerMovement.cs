@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float speed = 5f;
+    public Transform cameraTransform; // 把 Main Camera 拖進來
+
     private CharacterController controller;
     private Animator animator;
 
@@ -17,7 +19,17 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        Vector3 move = new Vector3(h, 0, v);
+        // 取得相機的前方向與右方向（忽略 Y 軸）
+        Vector3 camForward = cameraTransform.forward;
+        camForward.y = 0;
+        camForward.Normalize();
+
+        Vector3 camRight = cameraTransform.right;
+        camRight.y = 0;
+        camRight.Normalize();
+
+        // 根據相機方向計算移動
+        Vector3 move = camForward * v + camRight * h;
 
         // 如果有移動，就旋轉角色面對移動方向
         if (move != Vector3.zero)
@@ -32,7 +44,7 @@ public class PlayerMove : MonoBehaviour
         // 移動角色
         controller.Move(move.normalized * speed * Time.deltaTime);
 
-        // 傳入動畫參數
+        // 更新動畫參數
         animator.SetFloat("Speed", move.magnitude);
     }
 }

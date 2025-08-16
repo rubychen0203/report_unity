@@ -2,27 +2,37 @@ using UnityEngine;
 
 public class ModeSwitcher : MonoBehaviour
 {
-    public GameObject mainCamera;            // 聊天模式用的相機
-    public GameObject followCamera;          // 角色控制用的相機
+    public GameObject chatUI;               // 聊天 UI（Overlay 模式）
+    public GameObject gameUI;               // 遊戲 UI（Overlay 模式）
 
-    public GameObject startMenuUI;           // 聊天UI
-    public GameObject gameUI;                // 遊戲UI
+    public MonoBehaviour playerMoveScript;  // 角色移動腳本（如 PlayerMove）
+    public Transform player;                // 角色本體
+    public Transform thirdPersonCamera;     // 第三人稱相機
+    public Transform playerHead;
+    private Vector3 cameraOffset;           // 相機與角色的相對位置
 
-    public GameObject player;                // 主角（開啟控制）
-    public MonoBehaviour playerMoveScript;   // 角色移動腳本（如 PlayerMove）
+void Start()
+{
+    cameraOffset = thirdPersonCamera.position - playerHead.position;
 
-    void Start()
+
+}
+
+
+
+    void LateUpdate()
     {
-        SwitchToChatMode(); // 開始時先進入電腦模式
+        if (playerMoveScript != null && playerMoveScript.enabled)
+        {
+            thirdPersonCamera.position = playerHead.position + cameraOffset;
+            thirdPersonCamera.LookAt(playerHead.position);
+        }
     }
 
     public void SwitchToGameMode()
     {
         Debug.Log("切換到 3D 模式");
-        mainCamera.SetActive(false);
-        followCamera.SetActive(true);
-
-        startMenuUI.SetActive(false);
+        chatUI.SetActive(false);
         gameUI.SetActive(true);
 
         if (playerMoveScript != null)
@@ -32,10 +42,7 @@ public class ModeSwitcher : MonoBehaviour
     public void SwitchToChatMode()
     {
         Debug.Log("切換到 聊天模式");
-        mainCamera.SetActive(true);
-        followCamera.SetActive(false);
-
-        startMenuUI.SetActive(true);
+        chatUI.SetActive(true);
         gameUI.SetActive(false);
 
         if (playerMoveScript != null)
