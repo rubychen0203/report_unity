@@ -4,7 +4,7 @@ OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'zh' Physical Memory: 32378 
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2022.3.40f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2022.3.40f1-x86_64\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,7 +15,7 @@ C:/Users/p0910/Documents/UNITY/AITalk2
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-54134
+56358
 Successfully changed project path to: C:/Users/p0910/Documents/UNITY/AITalk2
 C:/Users/p0910/Documents/UNITY/AITalk2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,17 +49,17 @@ C:/Users/p0910/Documents/UNITY/AITalk2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [31260]  Target information:
+Player connection [17492]  Target information:
 
-Player connection [31260]  * "[IP] 192.168.9.18 [Port] 0 [Flags] 2 [Guid] 3324472200 [EditorId] 3324472200 [Version] 1048832 [Id] WindowsEditor(7,ruby0203) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [17492]  * "[IP] 192.168.9.19 [Port] 0 [Flags] 2 [Guid] 1954626253 [EditorId] 1954626253 [Version] 1048832 [Id] WindowsEditor(7,ruby0203) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [31260] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [31260] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17492] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17492] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-Refreshing native plugins compatible for Editor in 5.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.40f1 (cbdda657d2f0)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.40f1-x86_64/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/p0910/Documents/UNITY/AITalk2/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
@@ -69,49 +69,49 @@ Direct3D:
     VRAM:     7957 MB
     Driver:   32.0.15.5597
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1-x86_64/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1-x86_64/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1-x86_64/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005992 seconds.
-- Loaded All Assemblies, in  0.265 seconds
+Trying to register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.40f1-x86_64/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll (that doesn't exist). Retrying without overrides.
+Platform support module is not available: C:/Program Files/Unity/Hub/Editor/2022.3.40f1-x86_64/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.40f1-x86_64/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.017005 seconds.
+- Loaded All Assemblies, in  0.360 seconds
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.170 seconds
-Domain Reload Profiling: 433ms
-	BeginReloadAssembly (109ms)
+- Finished resetting the current domain, in  0.225 seconds
+Domain Reload Profiling: 583ms
+	BeginReloadAssembly (93ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (87ms)
-		LoadAssemblies (107ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (131ms)
+		LoadAssemblies (90ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (86ms)
-			TypeCache.Refresh (85ms)
-				TypeCache.ScanAssembly (77ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (120ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (170ms)
+	FinalizeReload (225ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (145ms)
+		SetupLoadedEditorAssemblies (181ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (51ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (65ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
+			ProcessInitializeOnLoadAttributes (109ms)
+			ProcessInitializeOnLoadMethodAttributes (60ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,51 +120,50 @@ Domain Reload Profiling: 433ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.405 seconds
+- Loaded All Assemblies, in  0.463 seconds
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.351 seconds
-Domain Reload Profiling: 753ms
-	BeginReloadAssembly (89ms)
+- Finished resetting the current domain, in  0.428 seconds
+Domain Reload Profiling: 888ms
+	BeginReloadAssembly (119ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (13ms)
-	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (261ms)
-		LoadAssemblies (188ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (263ms)
+		LoadAssemblies (220ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (126ms)
+		AnalyzeDomain (129ms)
 			TypeCache.Refresh (111ms)
 				TypeCache.ScanAssembly (100ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (351ms)
+	FinalizeReload (429ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (267ms)
+		SetupLoadedEditorAssemblies (302ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
+			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (39ms)
-			ProcessInitializeOnLoadAttributes (191ms)
-			ProcessInitializeOnLoadMethodAttributes (14ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (42ms)
+			ProcessInitializeOnLoadAttributes (221ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 2.66 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3884 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (128.5 KB). Loaded Objects now: 4356.
-Memory consumption went from 150.7 MB to 150.5 MB.
-Total: 5.817600 ms (FindLiveObjects: 0.191700 ms CreateObjectMapping: 0.228100 ms MarkObjects: 5.227700 ms  DeleteObjects: 0.166600 ms)
+Unloading 3883 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (128.4 KB). Loaded Objects now: 4352.
+Memory consumption went from 145.4 MB to 145.3 MB.
+Total: 2.493900 ms (FindLiveObjects: 0.179300 ms CreateObjectMapping: 0.053600 ms MarkObjects: 2.174600 ms  DeleteObjects: 0.085600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -182,920 +181,170 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1776347.705065 seconds.
-  path: Assets/場景
-  artifactKey: Guid(5923bb114b42dd340ad6a114c965af68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景 using Guid(5923bb114b42dd340ad6a114c965af68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'cb0ea2e5e29b94abccbdfeec7e3abc46') in 0.005557 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.880926 seconds.
-  path: Assets/場景/床 1.fbx
-  artifactKey: Guid(42077179bb6f95f4880d6f0f7764f33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/床 1.fbx using Guid(42077179bb6f95f4880d6f0f7764f33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 40964.525097 seconds.
+  path: Assets/場景/房間/書架.mat
+  artifactKey: Guid(c85e811eaeb3aa64cb4f0817d7472751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/書架.mat using Guid(c85e811eaeb3aa64cb4f0817d7472751) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '3b747373d2adec51755c25c6fc213fca') in 0.111101 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 210.255024 seconds.
-  path: Assets/場景/房間/Image_3.010.png
-  artifactKey: Guid(0b67ee42f67f84f48904db9170ba5d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_3.010.png using Guid(0b67ee42f67f84f48904db9170ba5d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '4657ac00e4145d06889df40db0fe5ecb') in 0.048439 seconds
+ -> (artifact id: '1ca8e45fc614d37b605cdf011767379e') in 0.082939 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.346030 seconds.
-  path: Assets/場景/房間/Image_3.013.jpg
-  artifactKey: Guid(4ac3eee919a4b99479a75172c088f7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_3.013.jpg using Guid(4ac3eee919a4b99479a75172c088f7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 170.569332 seconds.
+  path: Assets/場景/房間/地板.mat
+  artifactKey: Guid(153a7bfe20455274789b288191464289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/地板.mat using Guid(153a7bfe20455274789b288191464289) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '3c218c6da47b55599561ec34732447e1') in 0.009581 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_5.002.jpg
-  artifactKey: Guid(149977659a15ef340b2e88b89b90b7b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_5.002.jpg using Guid(149977659a15ef340b2e88b89b90b7b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '6ef6831529e3ed83969718855e6b82fc') in 0.007401 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_4.003.png
-  artifactKey: Guid(f8bee146e07002845a03cc71cb3ad4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_4.003.png using Guid(f8bee146e07002845a03cc71cb3ad4df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '7b1f3bf2a75e2e91348bab5043c6d890') in 0.009169 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_7.png
-  artifactKey: Guid(2e21127c6dabbfe44a92244811cd923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_7.png using Guid(2e21127c6dabbfe44a92244811cd923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '0746afb657a3c1325a8d2dfeaa047618') in 0.007937 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/場景/房間/Image_11.002.jpg
-  artifactKey: Guid(fe037ae1be7412b4580304d071eb4c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_11.002.jpg using Guid(fe037ae1be7412b4580304d071eb4c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'd3326c3c17ec3679d5eec7326d69593a') in 0.006423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_13.001.png
-  artifactKey: Guid(4362a4cc403133f498d4aec8ca1d4e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_13.001.png using Guid(4362a4cc403133f498d4aec8ca1d4e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'dc9cd7dc03bf1aa696c977ae33134804') in 0.004208 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_12.003.jpg
-  artifactKey: Guid(5b9e5489618a81144952e368efb48e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_12.003.jpg using Guid(5b9e5489618a81144952e368efb48e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '75fb61c5a7994d5f2eda8dad9d7c35b0') in 0.005715 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_8.008.png
-  artifactKey: Guid(c3e83e7285ed0634fb0d6ca54ac40501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_8.008.png using Guid(c3e83e7285ed0634fb0d6ca54ac40501) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '988ee44b5351aa00038040c28fbb4720') in 0.007266 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_15.001.jpg
-  artifactKey: Guid(069a281dbab932346af56ba09cb94071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_15.001.jpg using Guid(069a281dbab932346af56ba09cb94071) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'e8b0768aef5cae0f2a8f4e37f71031d3') in 0.005698 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/場景/房間/Image_22.png
-  artifactKey: Guid(c3357e7b521efec4199448fa7b755cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_22.png using Guid(c3357e7b521efec4199448fa7b755cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '8b5d3d3909370eaa4adf9e9717a22d45') in 0.007045 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_20.002.png
-  artifactKey: Guid(b173053630af67c40a448feedf3da712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_20.002.png using Guid(b173053630af67c40a448feedf3da712) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '47de57ccee976b5857563e528e259337') in 0.006125 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/場景/房間/Image_14.002.png
-  artifactKey: Guid(616c896ede0de8a429b927747d561a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_14.002.png using Guid(616c896ede0de8a429b927747d561a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'c4f976a724224cc27b6fae8c1ad23733') in 0.006691 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/場景/房間/Image_39.jpg
-  artifactKey: Guid(369a94d2368f24d4ba2861f933fb1a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_39.jpg using Guid(369a94d2368f24d4ba2861f933fb1a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '5520b93a6bfae7157f38276e7a0c08de') in 0.005193 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_7.004.jpg
-  artifactKey: Guid(7090e3186e869b742b1e6d569ee16b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_7.004.jpg using Guid(7090e3186e869b742b1e6d569ee16b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'ae73fe385950edcd10aa7b634ec78af3') in 0.007118 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/場景/房間/Image_18.png
-  artifactKey: Guid(6d8309ffc818ebe41b4680bce0ca5968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_18.png using Guid(6d8309ffc818ebe41b4680bce0ca5968) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '4a8f44ad417459699e37c7ec1a1a430d') in 0.007418 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/場景/房間/Image_23.001.jpg
-  artifactKey: Guid(31bf7c1aefecc9d4a9d4283f7330873d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_23.001.jpg using Guid(31bf7c1aefecc9d4a9d4283f7330873d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '2a3269d63818170ce79f5e12e3e0892b') in 0.005353 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_25.002.jpg
-  artifactKey: Guid(2e2f7c19ef7e77148866746a1439dec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_25.002.jpg using Guid(2e2f7c19ef7e77148866746a1439dec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '1cf0d593f63ed8bd335fc720cad5386e') in 0.006237 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/場景/房間/Image_11.003.png
-  artifactKey: Guid(1ab50c28a1be89f4a9c8abbbd9e1025f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_11.003.png using Guid(1ab50c28a1be89f4a9c8abbbd9e1025f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '1549d93f6d33bfe850c37e3fe14c402d') in 0.006174 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_27.png
-  artifactKey: Guid(c667effa0d27bcc42aab6e4dae15b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_27.png using Guid(c667effa0d27bcc42aab6e4dae15b725) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'f5e227f6c4253c350d64c22d844d6ceb') in 0.006322 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_10.png
-  artifactKey: Guid(f92dcfb11cb2e9d47ad9f0cbff097db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_10.png using Guid(f92dcfb11cb2e9d47ad9f0cbff097db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'b046066a9591b543626bf192f1c63dde') in 0.007477 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_17.png
-  artifactKey: Guid(06b953823a9d458458c8faf24e5bc49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_17.png using Guid(06b953823a9d458458c8faf24e5bc49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '8703c329be83acc6e4f18782ca885faf') in 0.008988 seconds
+ -> (artifact id: 'd784a0f5909c11b3416807111e024173') in 0.021026 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_23.png
-  artifactKey: Guid(e4eee04b7ad86db4dbf77b2aa4c47b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_23.png using Guid(e4eee04b7ad86db4dbf77b2aa4c47b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  path: Assets/場景/房間/時鐘 1.mat
+  artifactKey: Guid(72d46e6eff8111a43b3d081e38a96b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/時鐘 1.mat using Guid(72d46e6eff8111a43b3d081e38a96b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'fd8179057db65f61cd4744e30cfa76a1') in 0.010763 seconds
+ -> (artifact id: 'f657fff0da9e3595057f51bb2e24d933') in 0.010811 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_4.004.png
-  artifactKey: Guid(6d93f9e6830f7a14aadc91f436e8385e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_4.004.png using Guid(6d93f9e6830f7a14aadc91f436e8385e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 384.294341 seconds.
+  path: Assets/場景/房間/時鐘 1.mat
+  artifactKey: Guid(72d46e6eff8111a43b3d081e38a96b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/時鐘 1.mat using Guid(72d46e6eff8111a43b3d081e38a96b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'e68ae2f58dd009f6b5c86e042e328781') in 0.007049 seconds
+ -> (artifact id: '52455b25f4867766b4efbbd7a108e2f3') in 0.016178 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_44.png
-  artifactKey: Guid(a9ec5896cace043468adeab2c0ed3b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_44.png using Guid(a9ec5896cace043468adeab2c0ed3b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 550.279279 seconds.
+  path: Assets/場景/房間/飛鏢 2.mat
+  artifactKey: Guid(12a24e03b6d773a4994a491ddd04f040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/飛鏢 2.mat using Guid(12a24e03b6d773a4994a491ddd04f040) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'e5865fa5bea819f7e0a64a2d32631b11') in 0.003805 seconds
+ -> (artifact id: '24bceb8073ed8284cb7492f369ea737e') in 0.010690 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/場景/房間/Image_14.001.jpg
-  artifactKey: Guid(3c599aaafaaa51140bd902e2ab48ea0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_14.001.jpg using Guid(3c599aaafaaa51140bd902e2ab48ea0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 9.123568 seconds.
+  path: Assets/場景/房間/鏡面.mat
+  artifactKey: Guid(12a24e03b6d773a4994a491ddd04f040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/鏡面.mat using Guid(12a24e03b6d773a4994a491ddd04f040) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'eed5ac98621700328aa513984e8f1f94') in 0.004955 seconds
+ -> (artifact id: 'c10700579bb74b11c2024b0629a2e14d') in 0.007827 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_6.png
-  artifactKey: Guid(f7d88375dbfd1bc4a95f632ded7c6ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_6.png using Guid(f7d88375dbfd1bc4a95f632ded7c6ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'e5a32909d3fc1195404c2b3791583a57') in 0.007816 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_42.jpg
-  artifactKey: Guid(80094d7dc31e00c45aeaea9aad97934e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_42.jpg using Guid(80094d7dc31e00c45aeaea9aad97934e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'b0b3622f24571b77dd27e45d33344b6c') in 0.004890 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_8.003.png
-  artifactKey: Guid(d2a04904ebc30a649adb1a06ba9078af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_8.003.png using Guid(d2a04904ebc30a649adb1a06ba9078af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '6aa5af6abe8b683e81376365d12fbe66') in 0.010589 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_8.004.jpg
-  artifactKey: Guid(f6aa94a39f0b1a74e96ffa55ccec727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_8.004.jpg using Guid(f6aa94a39f0b1a74e96ffa55ccec727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '4d53c0cd688a9f4cc1d377cf19d74fff') in 0.006896 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_6.002.png
-  artifactKey: Guid(983f224a5bae9d44d98bd976eba24895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_6.002.png using Guid(983f224a5bae9d44d98bd976eba24895) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '25bf8a6df49a8455995ac074d2cb807a') in 0.005507 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_7.008.jpg
-  artifactKey: Guid(4dbcb2a6873fd8e4ba6db9400271f8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_7.008.jpg using Guid(4dbcb2a6873fd8e4ba6db9400271f8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'c75054a80b93f9f155a6913916135f11') in 0.005760 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_21.001.jpg
-  artifactKey: Guid(8b308840c0155344fb0149e1baa50d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_21.001.jpg using Guid(8b308840c0155344fb0149e1baa50d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '29a42a617e6f4d58c14dcf0610f22f48') in 0.014308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_12.002.jpg
-  artifactKey: Guid(72e6f99dff007d743983d3d89e1b58bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_12.002.jpg using Guid(72e6f99dff007d743983d3d89e1b58bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'e54022e926e83e3791e35d64a6876d0e') in 0.006036 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/old_chair_bcolor.png
-  artifactKey: Guid(71e15eac97f8aeb408aed8709839b13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/old_chair_bcolor.png using Guid(71e15eac97f8aeb408aed8709839b13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'e3312a0b8b7e2430157aae75cda15cb1') in 0.009669 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_46.jpg
-  artifactKey: Guid(1f1cd22d06af78f42bb97fb6f0e272df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_46.jpg using Guid(1f1cd22d06af78f42bb97fb6f0e272df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '1802adfb5bfa0a6c458c0c2f8228de5c') in 0.004870 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_11.001.png
-  artifactKey: Guid(593402c38edf62b4685cff6d3149d20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_11.001.png using Guid(593402c38edf62b4685cff6d3149d20d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'fc139d2a90120d7e65c52b94b115295f') in 0.006596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/場景/房間/Image_20.png
-  artifactKey: Guid(ce2c32f98055c1d499980b3e0b05746c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_20.png using Guid(ce2c32f98055c1d499980b3e0b05746c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'b1e61144be21c2250242a110662ae109') in 0.008732 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_15.003.jpg
-  artifactKey: Guid(f00aacaf0d8d79646ae53469432ee0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_15.003.jpg using Guid(f00aacaf0d8d79646ae53469432ee0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '4aaf6adeb386d266a634d81369fb271b') in 0.006053 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_47.jpg
-  artifactKey: Guid(900e53ba3544bb44e9dded8c64f3c14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_47.jpg using Guid(900e53ba3544bb44e9dded8c64f3c14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'd80c744c8d3653e90c91697c6bc6d55c') in 0.005884 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_7.010.jpg
-  artifactKey: Guid(a8424a795aa011147a738baa6e530253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_7.010.jpg using Guid(a8424a795aa011147a738baa6e530253) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'dfc966c3d0e83170b45100a369b16f7f') in 0.006311 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/場景/房間/Image_34.jpg
-  artifactKey: Guid(a9618dad25f570e45be4caa19b771dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_34.jpg using Guid(a9618dad25f570e45be4caa19b771dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '24bbca02901a43d32646763357c6a082') in 0.005762 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_12.001.jpg
-  artifactKey: Guid(87389b1ffea27e94ead072c4c99e468a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_12.001.jpg using Guid(87389b1ffea27e94ead072c4c99e468a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'de27147c9ebb98acd60ae8bc94f0bae4') in 0.010516 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_20.001.jpg
-  artifactKey: Guid(b2c5a06e379175b43976915abec4832c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_20.001.jpg using Guid(b2c5a06e379175b43976915abec4832c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'c7642294e124e01261bc7856a254a921') in 0.006749 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_5.004.png
-  artifactKey: Guid(ab278e1b890a4dc4b9920317f831d810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_5.004.png using Guid(ab278e1b890a4dc4b9920317f831d810) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '25284ec591e200fc2501658c6a8ef488') in 0.006701 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_5.png
-  artifactKey: Guid(cbb4e776daf40f049a8d06671ba8b2a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_5.png using Guid(cbb4e776daf40f049a8d06671ba8b2a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'ead2b3a649585de4e1d982bbe2c83f34') in 0.010579 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_16.png
-  artifactKey: Guid(ee3473a8f1af99b4d8db4bab082c20a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_16.png using Guid(ee3473a8f1af99b4d8db4bab082c20a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '1a96e11b4d259f3f7b4398183e4e6b71') in 0.010537 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/場景/房間/Image_7.006.png
-  artifactKey: Guid(0e737bd62a1885344adf3eb48ac246c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_7.006.png using Guid(0e737bd62a1885344adf3eb48ac246c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '13f1d7d8ee59b2c71d7cd497651ac867') in 0.005758 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/場景/房間/Image_33.001.jpg
-  artifactKey: Guid(4b0de8e444466594d8752e2241e6be7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_33.001.jpg using Guid(4b0de8e444466594d8752e2241e6be7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '6ccf5ccb1a24e80c6e7c6f49b6ff7ba9') in 0.004600 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/場景/房間/old_chair_Normal.png
-  artifactKey: Guid(5d134f15b0ae9e341837d3351b738c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/old_chair_Normal.png using Guid(5d134f15b0ae9e341837d3351b738c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'b2559931f06b8daccd1d4ea7d3aeb7a9') in 0.011823 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/old_chair_Metallic-old_chair_Roughness.001.png
-  artifactKey: Guid(6b374df1121b1f145993affc49788457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/old_chair_Metallic-old_chair_Roughness.001.png using Guid(6b374df1121b1f145993affc49788457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '2193fbd86f69316886844c03976603cc') in 0.007177 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Textures.png
-  artifactKey: Guid(3abfd10fd48ece84e9972db38aed7440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Textures.png using Guid(3abfd10fd48ece84e9972db38aed7440) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'a0bea5139180058efc3e1b1e006677bc') in 0.005831 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_43.png
-  artifactKey: Guid(92d56223bf1e29b4886eef756c223b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_43.png using Guid(92d56223bf1e29b4886eef756c223b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '30e5f774148a6532eb96a02d696eb222') in 0.005183 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/unnamed.jpg
-  artifactKey: Guid(96722af5e8f822c4ab5061f78aceec0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/unnamed.jpg using Guid(96722af5e8f822c4ab5061f78aceec0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'de30383dabee4143311ce32054ab8e7b') in 0.006628 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_6.009.jpg
-  artifactKey: Guid(db4bbfa505320a54ab18e60db35aadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_6.009.jpg using Guid(db4bbfa505320a54ab18e60db35aadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '5a6c9711823e1f750601c8002944ab82') in 0.007021 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/場景/房間/Image_4.011.jpg
-  artifactKey: Guid(bda1a5670cad33c4b8c2bbc620510e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_4.011.jpg using Guid(bda1a5670cad33c4b8c2bbc620510e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'f1ceb846c3420da266dfa098e43bcf5d') in 0.006395 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_5.008.jpg
-  artifactKey: Guid(75b60ab5f47768142a85dc5cfaca1f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_5.008.jpg using Guid(75b60ab5f47768142a85dc5cfaca1f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '87773f921105cf9aab602fb11090dcef') in 0.004868 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/場景/房間/Image_16.001.png
-  artifactKey: Guid(b2f2ed0cc0526e34eaeea392cf581ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_16.001.png using Guid(b2f2ed0cc0526e34eaeea392cf581ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '539b7d0bfa5d4cc3cc2e779ed015450f') in 0.004747 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_24.png
-  artifactKey: Guid(dd8f9803ba765274e82cfbd15b2b27bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_24.png using Guid(dd8f9803ba765274e82cfbd15b2b27bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '025a06a31ff478511175054945f15d83') in 0.008804 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_25.png
-  artifactKey: Guid(38065858528af6d479e690570dee3abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_25.png using Guid(38065858528af6d479e690570dee3abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '2123ecd89e9feede00cad601b128ab4f') in 0.007288 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/場景/房間/Image_9.png
-  artifactKey: Guid(79ed38b3707eaaa4e80f8ecfbf454b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_9.png using Guid(79ed38b3707eaaa4e80f8ecfbf454b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '616ff1b761321804603ae280947889bd') in 0.006670 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_9.002.jpg
-  artifactKey: Guid(7b604ba7c95851d4698d897687739cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_9.002.jpg using Guid(7b604ba7c95851d4698d897687739cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'd2cd9eec1e20434162e39773f9397a16') in 0.008943 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_3.014.png
-  artifactKey: Guid(4b904d69ffe76434d93290d8ad795225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_3.014.png using Guid(4b904d69ffe76434d93290d8ad795225) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'c04c46be2e383fb77870586a3e291339') in 0.006301 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/場景/房間/Image_9.001.png
-  artifactKey: Guid(104e68a214e5f5044843bcc8759b5be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_9.001.png using Guid(104e68a214e5f5044843bcc8759b5be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '2289ce101cf0bff3fd1c41aa030f6eb6') in 0.007427 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/場景/房間/Image_36.jpg
-  artifactKey: Guid(1eebb5977b923574db7dcb2ed414794e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_36.jpg using Guid(1eebb5977b923574db7dcb2ed414794e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '25282752db07a241125e441348c27f7e') in 0.004363 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/場景/房間/Image_19.png
-  artifactKey: Guid(67fcedfa8463e9d4abb43ccfddea2304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/Image_19.png using Guid(67fcedfa8463e9d4abb43ccfddea2304) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '233e677764fae95b488aaa451ebe2b7e') in 0.007001 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 135.600532 seconds.
-  path: Assets/場景/房間/New Material.mat
-  artifactKey: Guid(66f9a26a0ac5a824d8358b8665d73da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/New Material.mat using Guid(66f9a26a0ac5a824d8358b8665d73da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '10cb44d5fd8acc9129c2c1e2cf127f06') in 0.017454 seconds
+  Time since last request: 8.872206 seconds.
+  path: Assets/場景/房間/1689298909_1792b062cfc240187417.avif
+  artifactKey: Guid(f07d34c05cc968a40af4125270580c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/1689298909_1792b062cfc240187417.avif using Guid(f07d34c05cc968a40af4125270580c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '8d8a30089ea3b50b3c9f7755337cd3c0') in 0.001425 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 706.005691 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 49.910674 seconds.
+  path: Assets/場景/房間/download.jpg
+  artifactKey: Guid(ec0884d6e1f5d104b9c51910c9455a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/download.jpg using Guid(ec0884d6e1f5d104b9c51910c9455a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '27d422903e5cd4905b9edb7dcb40e7de') in 0.083791 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 16.871531 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '4de97e7322e9b7f9fb8f988631ce2941') in 0.017344 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 8.364477 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '1544ea8c910c978b3173548a47173b99') in 0.045498 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 7.711387 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'd3f409d87a65f759cafd592d813e96f5') in 0.048416 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 25
-========================================================================
-Received Import Request.
-  Time since last request: 14.274014 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '1f5c65728f3e94a97e82821e2f13e7ac') in 0.045189 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 16.166558 seconds.
-  path: Assets/場景/房間/枕頭 1.mat
-  artifactKey: Guid(4558fdd19764cea4e9b9fca100ded6f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/枕頭 1.mat using Guid(4558fdd19764cea4e9b9fca100ded6f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '9f739a7781d948c75fd0a4450afb8648') in 0.010515 seconds
+ -> (artifact id: '9fc6d8a8763f76c91e1a701635d045fc') in 0.012761 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 7.058922 seconds.
-  path: Assets/場景/房間/棉被.mat
-  artifactKey: Guid(4558fdd19764cea4e9b9fca100ded6f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/棉被.mat using Guid(4558fdd19764cea4e9b9fca100ded6f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 54.594655 seconds.
+  path: Assets/場景/房間/地板 1.mat
+  artifactKey: Guid(c48cc7d03bfada044a88fd636dccf0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/地板 1.mat using Guid(c48cc7d03bfada044a88fd636dccf0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '939f3f2815308e50476a1e4f360ab623') in 0.006423 seconds
+ -> (artifact id: '89e80281dc3919e88333ec3f8995b740') in 0.021851 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 54.119332 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 342.849219 seconds.
+  path: Assets/場景/房間/94447225-블루-타일-원활한-패턴-욕실-인테리어에-대-한-배경입니다-청결-및-위생-플랫-벡터-만화-일러스트-레이.jpg
+  artifactKey: Guid(3bea7c48340eeb445861f8e45a206415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/94447225-블루-타일-원활한-패턴-욕실-인테리어에-대-한-배경입니다-청결-및-위생-플랫-벡터-만화-일러스트-레이.jpg using Guid(3bea7c48340eeb445861f8e45a206415) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'c1c7653234ea4c6a9fe91cd8c0c8e929') in 0.056671 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 26
-========================================================================
-Received Import Request.
-  Time since last request: 39.037842 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'b81afd69d9f65973c9e6aef720757d51') in 0.080403 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 13.814354 seconds.
-  path: Assets/場景/房間/被單.mat
-  artifactKey: Guid(d120cf0c72a88604894b4b9343f4c989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/被單.mat using Guid(d120cf0c72a88604894b4b9343f4c989) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '51b840609915c77f191228987ec7011d') in 0.009219 seconds
+ -> (artifact id: 'b8277cf89ea9f8d548e0bc04403e2b45') in 0.029019 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 3.996106 seconds.
-  path: Assets/場景/房間/被單 1.mat
-  artifactKey: Guid(d74b491ea2b3e4e4c8123a5c5c440cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/被單 1.mat using Guid(d74b491ea2b3e4e4c8123a5c5c440cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 351.266176 seconds.
+  path: Assets/場景/房間/images.jpg
+  artifactKey: Guid(b60de80090f606948b52f4930c12f043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/images.jpg using Guid(b60de80090f606948b52f4930c12f043) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'e64931ca9c3c8040f3cb74c471b33014') in 0.007073 seconds
+ -> (artifact id: 'ff653006d332bcdc9c434754bceb54e0') in 0.014097 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 9.661187 seconds.
-  path: Assets/場景/房間/床.mat
-  artifactKey: Guid(d74b491ea2b3e4e4c8123a5c5c440cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.mat using Guid(d74b491ea2b3e4e4c8123a5c5c440cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 144.731147 seconds.
+  path: Assets/場景/房間/images 1.jpg
+  artifactKey: Guid(127090db6ad195c4098cf62b8c41f1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/images 1.jpg using Guid(127090db6ad195c4098cf62b8c41f1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'bf73d1bcd5b2f5d49a71f0127f1829b2') in 0.018885 seconds
+ -> (artifact id: '2e107b37d90e73a47cb399b00bdb2363') in 0.016991 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 13.501739 seconds.
-  path: Assets/場景/房間/被單 1.mat
-  artifactKey: Guid(ac51dc3bd6c57be479487bcc19dca6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/被單 1.mat using Guid(ac51dc3bd6c57be479487bcc19dca6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 343.332618 seconds.
+  path: Assets/場景/房間/地板.mat
+  artifactKey: Guid(153a7bfe20455274789b288191464289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/地板.mat using Guid(153a7bfe20455274789b288191464289) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'f5eee2b68175633884e5a1e43222590e') in 0.014789 seconds
+ -> (artifact id: 'ea9bbd0ab85df1210014cb772fe87f7b') in 0.009706 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 12.036243 seconds.
-  path: Assets/場景/房間/床架.mat
-  artifactKey: Guid(ac51dc3bd6c57be479487bcc19dca6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床架.mat using Guid(ac51dc3bd6c57be479487bcc19dca6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 396.173933 seconds.
+  path: Assets/場景/房間/地板 1.mat
+  artifactKey: Guid(c48cc7d03bfada044a88fd636dccf0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/地板 1.mat using Guid(c48cc7d03bfada044a88fd636dccf0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '6c2dc7ba59154172f30e5b7030b045b8') in 0.014590 seconds
+ -> (artifact id: 'e4de788f4e8e3387a2c1c03a5f8b42dd') in 0.015293 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 11.166996 seconds.
+  path: Assets/場景/房間/木桌.mat
+  artifactKey: Guid(c8412a80ff99aac4cba99e38b079689b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/木桌.mat using Guid(c8412a80ff99aac4cba99e38b079689b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+ -> (artifact id: '638820d1f9c4e910a5e56c0e3f032367') in 0.008060 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 144.957270 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/微軟正黑體-1 SDF.asset
-  artifactKey: Guid(d0289bced4ea7a7498f634303031478f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/微軟正黑體-1 SDF.asset using Guid(d0289bced4ea7a7498f634303031478f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 30.154749 seconds.
+  path: Assets/場景/房間/木桌.mat
+  artifactKey: Guid(c8412a80ff99aac4cba99e38b079689b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/木桌.mat using Guid(c8412a80ff99aac4cba99e38b079689b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '30d1296ecef4128822489a438bbd7a6e') in 0.091709 seconds
+ -> (artifact id: '36a607c97b65da5a36a94667ad05292f') in 0.007151 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 86.780655 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+  Time since last request: 133.448202 seconds.
+  path: Assets/場景/房間/地板 1.mat
+  artifactKey: Guid(c48cc7d03bfada044a88fd636dccf0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/場景/房間/地板 1.mat using Guid(c48cc7d03bfada044a88fd636dccf0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '2bfa7b97a4f51ee185e5e68d1122514e') in 0.034139 seconds
+ -> (artifact id: 'ce533a7c023132e4eae45c444336e127') in 0.011877 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 20.980577 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'a8aa93392579dd73a2cc93b0c721471d') in 0.035112 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 58.980486 seconds.
-  path: Assets/場景/房間/床.fbx
-  artifactKey: Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/場景/房間/床.fbx using Guid(452662e6e78d5c94abe2f3dcba756c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: 'b82ce30b5bcbe06127b2070ce9f17744') in 0.059821 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 31
+Number of asset objects unloaded after import = 4
