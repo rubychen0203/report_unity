@@ -1,0 +1,22 @@
+[show]
+[audio,bgm,bgm,true,0,audioTransit_1_1000]
+[image,bg,2,0,0,0,spFadeIn_1000]
+
+[image,char,girl,0,1,0]
+小美： 哈哈~昨天熬夜趕報告啦~沒想到你觀察這麼敏銳呢！[w]
+[image,char,boy,300,1,0]
+小明：那當然，也不看看我是誰！！[w]
+[image,char,girl,0,1,0]
+小美： 。。。[w]
+小美： 那今後我們還是要開開心心的在一起學習哦~[w]
+[image,char,boy,300,1,0]
+小明：這不是肯定的嗎?你今天話真多ㄟ。[w]
+小明：他們一定都先跑去吃午餐了，我們也快點過去吧！[w]
+[image,char,boy,300,1,0]
+小美： 好~嘻嘻嘻嘻嘻。[w]
+[remove,bg,spFadeOut_1000]
+
+[image,bg,END1,0,0,0,spFadeIn_1000]
+[remove,bg,spFadeOut_1000]
+[image,bg,END,0,0,0,spFadeIn_1000]
+
