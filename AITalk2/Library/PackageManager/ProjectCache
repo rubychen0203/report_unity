@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638937263179508777
+      ticks: 638943041063935172
     m_Hash: 1595218703
   m_LockFileStatus:
     m_FilePath: "C:/Users/user/OneDrive/\u6587\u4EF6/report_unity/AITalk2/Packages/packages-lock.json"
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638937263179518772
+      ticks: 638943041063935172
     m_Hash: 3086314749
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -3124,14 +3124,17 @@ m_ResolvedPackages:
     - 3.0.35
     - 3.0.36
     - 3.0.37
+    - 3.0.38
     compatible:
     - 3.0.31
     - 3.0.34
     - 3.0.35
     - 3.0.36
     - 3.0.37
-    recommended: 3.0.37
-    deprecated: []
+    - 3.0.38
+    recommended: 3.0.38
+    deprecated:
+    - 3.0.37
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
