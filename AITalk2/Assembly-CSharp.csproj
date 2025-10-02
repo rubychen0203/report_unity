@@ -64,6 +64,7 @@
     <Compile Include="Assets\ThirdPersonCameraController.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\OllamaClient.cs" />
+    <Compile Include="Assets\場景\DoorInteraction.cs" />
     <Compile Include="Assets\CameraFollow.cs" />
     <Compile Include="Assets\VideoTrigger.cs" />
     <Compile Include="Assets\UI.cs" />
