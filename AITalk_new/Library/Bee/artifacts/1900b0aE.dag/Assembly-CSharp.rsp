@@ -372,7 +372,7 @@
 "Assets/theme/Assets/Scripts/IntroCont.cs"
 "Assets/theme/Assets/Scripts/OneController.cs"
 "Assets/ThirdPersonCameraController.cs"
-"Assets/TutorialUI.cs"
+"Assets/TutorialController.cs"
 "Assets/UI.cs"
 "Assets/VideoTrigger.cs"
 -langversion:9.0

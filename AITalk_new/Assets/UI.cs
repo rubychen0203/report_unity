@@ -1,35 +1,51 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.Video;
+using UnityEngine.EventSystems; // 必須引入 EventSystem
 
 public class StartMenuController : MonoBehaviour
 {
     public GameObject startMenu;
-    public GameObject gameUI;
-    public VideoPlayer videoPlayerObject; // 指向 VideoPlayerObject
-    public Button startButton;            // Start 按鈕元件
+    public GameObject gameUI;         // 🔹 3DGameUI
+    public Button startButton;
+    public InputField chatInputField; // 🔹 3DGameUI 的聊天輸入欄位
 
     private void Start()
     {
-        gameUI.SetActive(false);
-        videoPlayerObject.gameObject.SetActive(false);
+        startButton.onClick.AddListener(StartIntroScene);
 
-        // 為 startButton 設定點擊事件
-        startButton.onClick.AddListener(PlayIntroAndStartGame);
+        // 🔹 如果是從 Intro 回來，直接顯示 3DGameUI
+        if (IntroController.fromIntro)
+        {
+            startMenu.SetActive(false);
+            gameUI.SetActive(true);
+            IntroController.fromIntro = false; // 用完就清掉
+
+            // 🔹 強制選中 InputField
+            if (chatInputField != null)
+            {
+                chatInputField.Select();
+                chatInputField.ActivateInputField();
+            }
+
+            // 🔹 確保 EventSystem 存在
+            if (FindObjectOfType<EventSystem>() == null)
+            {
+                GameObject es = new GameObject("EventSystem");
+                es.AddComponent<EventSystem>();
+                es.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
+            }
+        }
+        else
+        {
+            startMenu.SetActive(true);
+            gameUI.SetActive(false);
+        }
     }
 
-    public void PlayIntroAndStartGame()
+    private void StartIntroScene()
     {
         startMenu.SetActive(false);
-        videoPlayerObject.gameObject.SetActive(true);
-        videoPlayerObject.Play();
-        videoPlayerObject.loopPointReached += OnVideoFinished;
-    }
-
-    private void OnVideoFinished(VideoPlayer vp)
-    {
-        videoPlayerObject.gameObject.SetActive(false);
-        gameUI.SetActive(true);
+        SceneManager.LoadScene("Intro");
     }
 }

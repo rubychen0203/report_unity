@@ -110,6 +110,8 @@ namespace Flower{
         private EventHandler<TextUpdateEventArgs> _defaultTextUpdateHandler;
         private bool _defaultLogEnable=false;
         
+        public event Action OnDialogFinished;
+
         void Start()
         {
 
@@ -1086,18 +1088,22 @@ namespace Flower{
         #endregion
 
         void Update() {
-            if(!isTextListCompleted && this.isTextCompleted && !this.isStop){
-                if(this.currentTextListIndex < this.currentTextList.Count){
-                    SetText(this.currentTextList[this.currentTextListIndex]);
-                    this.currentTextListIndex++;
-                }else{
-                    this.isTextListCompleted = true;
-                }
-            }
-            if(this.processMode == ProcessModeType.Auto){
-                this.Next();
-            }
+    if(!isTextListCompleted && this.isTextCompleted && !this.isStop){
+        if(this.currentTextListIndex < this.currentTextList.Count){
+            SetText(this.currentTextList[this.currentTextListIndex]);
+            this.currentTextListIndex++;
+        }else{
+            this.isTextListCompleted = true;
+
+            // 🔹 在這裡觸發事件
+            OnDialogFinished?.Invoke();
         }
+    }
+    if(this.processMode == ProcessModeType.Auto){
+        this.Next();
+    }
+}
+
     }
 
     public class LogEventArgs: System.EventArgs{
