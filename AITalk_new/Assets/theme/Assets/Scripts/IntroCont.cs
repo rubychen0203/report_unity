@@ -9,7 +9,7 @@ public class IntroCont: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fs = FlowerManager.Instance.CreateFlowerSystem("default", false);
+        fs = FlowerManager.Instance.CreateFlowerSystem("theme", false);
         fs.SetupDialog();
         fs.ReadTextFromResource("Intro0");
 

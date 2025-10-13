@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; // ✅ 新增這行（切換場景要用）
 
 public class OllamaClient : MonoBehaviour
 {
@@ -35,6 +36,14 @@ public class OllamaClient : MonoBehaviour
             chatLog.Add($"<b>你：</b>{prompt}");
             UpdateChatDisplay();
 
+            // ✅ 新增：偵測玩家輸入中是否包含「外星人」
+            if (prompt.Contains("外星人"))
+            {
+                Debug.Log("偵測到關鍵字『外星人』，切換到 thema 場景！");
+                SceneManager.LoadScene("thema");
+                return; // 避免繼續呼叫 Flask
+            }
+
             StartCoroutine(SendOllamaCMD(prompt));
             inputField.text = "";
         }
@@ -64,9 +73,17 @@ public class OllamaClient : MonoBehaviour
                 chatLog.Add($"<b>AI：</b>{output}");
                 UpdateChatDisplay();
 
+                // ✅ 保留原有的「新聞」影片播放
                 if (output.Contains("新聞"))
                 {
-                    videoTrigger?.PlayVideo();  // 播放影片
+                    videoTrigger?.PlayVideo();
+                }
+
+                // ✅ 新增：AI 回覆中也可以觸發「外星人」換場景
+                if (output.Contains("外星人"))
+                {
+                    Debug.Log("AI 回覆提到『外星人』，切換到 thema 場景！");
+                    SceneManager.LoadScene("thema");
                 }
             }
         }
