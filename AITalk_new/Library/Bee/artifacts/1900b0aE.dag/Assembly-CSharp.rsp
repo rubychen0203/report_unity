@@ -359,6 +359,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/Unity 2022.3.40f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/Unity 2022.3.40f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/CameraFollow.cs"
+"Assets/hihi.cs"
 "Assets/Interactable.cs"
 "Assets/intro/Assets/Flower/Scripts/FlowerManager.cs"
 "Assets/intro/Assets/Flower/Scripts/FlowerSystem.cs"

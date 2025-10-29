@@ -66,14 +66,15 @@
   <ItemGroup>
     <Compile Include="Assets\TableInteraction.cs" />
     <Compile Include="Assets\intro\Assets\Flower\Scripts\FlowerManager.cs" />
-    <Compile Include="Assets\TutorialUI.cs" />
     <Compile Include="Assets\ModeSwitcher.cs" />
     <Compile Include="Assets\intro\Assets\Flower\Scripts\FlowerSystem.cs" />
     <Compile Include="Assets\ThirdPersonCameraController.cs" />
     <Compile Include="Assets\intro\Assets\Scripts\IntroControler.cs" />
     <Compile Include="Assets\ShowEPrompt.cs" />
+    <Compile Include="Assets\TutorialController.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\OllamaClient.cs" />
+    <Compile Include="Assets\hihi.cs" />
     <Compile Include="Assets\intro\Assets\Flower\Scripts\UsageCase.cs" />
     <Compile Include="Assets\CameraFollow.cs" />
     <Compile Include="Assets\VideoTrigger.cs" />
