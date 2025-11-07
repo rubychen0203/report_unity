@@ -32,5 +32,5 @@
 結局2———不明。
 [hide]
 [remove,bg,spFadeOut_1000]
-[image,bg,END,0,0,0,spFadeIn_1000]
+[load_scene,GameOverScene]
 
