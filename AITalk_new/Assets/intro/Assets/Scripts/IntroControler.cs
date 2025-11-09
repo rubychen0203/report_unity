@@ -16,7 +16,7 @@ public class IntroController : MonoBehaviour
     void Start()
     {
         // 建立對話系統
-        fs = FlowerManager.Instance.CreateFlowerSystem("default", false);
+        fs = FlowerManager.Instance.CreateFlowerSystem("intro_fs", false);
         fs.SetupDialog();
         fs.ReadTextFromResource("Intro");
 

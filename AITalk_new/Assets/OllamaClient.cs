@@ -36,14 +36,6 @@ public class OllamaClient : MonoBehaviour
             chatLog.Add($"<b>你：</b>{prompt}");
             UpdateChatDisplay();
 
-            // ✅ 新增：偵測玩家輸入中是否包含「外星人」
-            if (prompt.Contains("外星人"))
-            {
-                Debug.Log("偵測到關鍵字『外星人』，切換到 thema 場景！");
-                SceneManager.LoadScene("thema");
-                return; // 避免繼續呼叫 Flask
-            }
-
             StartCoroutine(SendOllamaCMD(prompt));
             inputField.text = "";
         }

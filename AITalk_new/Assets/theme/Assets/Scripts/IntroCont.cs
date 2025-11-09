@@ -20,7 +20,7 @@ void Awake()
         return;
     }
 
-    fs = FlowerManager.Instance.CreateFlowerSystem("default", false);
+    fs = FlowerManager.Instance.CreateFlowerSystem("thema_fs", false);
 
     if (fs == null)
     {

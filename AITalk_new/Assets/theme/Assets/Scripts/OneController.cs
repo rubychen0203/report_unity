@@ -10,7 +10,7 @@ public GameObject choicePanel; // 拖 ChoicePanel 進來
 
 void Start()
 {
-    fs = FlowerManager.Instance.GetFlowerSystem("default");
+    fs = FlowerManager.Instance.GetFlowerSystem("thema_fs");
     // 一開始不讀，等玩家選擇
 }
 
