@@ -16,10 +16,7 @@
 小明：他們一定都先跑去吃午餐了，我們也快點過去吧！[w]
 [image,char,g,300,1,0]
 小美： 好~嘻嘻嘻嘻嘻。[w]
+[hide]
 [remove,char,spFadeOut_1000]
 [remove,bg,spFadeOut_1000]
-[image,bg,END1,0,0,0,spFadeIn_1000]
-結局1———存活。
-[hide]
-[remove,bg,spFadeOut_1000]
-[load_scene,GameOverScene]
+[load_scene,a_end]

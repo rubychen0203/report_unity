@@ -1,48 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Flower;
 
 public class OneController : MonoBehaviour
 {
-FlowerSystem fs;
-public GameObject choicePanel; // 拖 ChoicePanel 進來
+    FlowerSystem fs;
+    public GameObject choicePanel; // 拖 ChoicePanel 進來
+    public string sceneA = "a"; // 要載入的場景A名稱
+    public string sceneB = "b"; // 要載入的場景B名稱
 
-void Start()
-{
-    fs = FlowerManager.Instance.GetFlowerSystem("thema_fs");
-    // 一開始不讀，等玩家選擇
-}
-
-void Update()
-{
-    if (fs != null && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
+    void Start()
     {
-        fs.Next();
+        fs = FlowerManager.Instance.GetFlowerSystem("thema_fs");
     }
-}
 
-// 上面選項：播放 intro1
-public void PlayIntro1()
-{
-    if (fs != null)
+    void Update()
     {
-        fs.SetupDialog(); // 🔹 重新顯示對話框
-        fs.ReadTextFromResource("Intro1");
+        if (fs != null && (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
+        {
+            fs.Next();
+        }
     }
-    choicePanel.SetActive(false); // 關閉選項
-}
 
-// 下面選項：播放 intro2
-public void PlayIntro2()
-{
-    if (fs != null)
+    // 上面選項 → 設定要讀的劇本名稱並載入場景A
+    public void PlayIntro1()
     {
-        fs.SetupDialog(); // 🔹 重新顯示對話框
-        fs.ReadTextFromResource("Intro2");
+        PlayerPrefs.SetString("NextScript", "Intro1"); // ✅ 暫存要播放的腳本名
+        SceneManager.LoadScene(sceneA);
     }
-    choicePanel.SetActive(false); // 關閉選項
-}
 
-
+    // 下面選項 → 設定要讀的劇本名稱並載入場景B
+    public void PlayIntro2()
+    {
+        PlayerPrefs.SetString("NextScript", "Intro2");
+        SceneManager.LoadScene(sceneB);
+    }
 }

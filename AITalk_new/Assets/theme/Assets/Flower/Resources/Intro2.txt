@@ -28,9 +28,6 @@
 [hide]
 [remove,char,spFadeOut_1000]
 [remove,bg,spFadeOut_1000]
-[image,bg,END2,0,0,0,spFadeIn_1000]
-結局2———不明。
-[hide]
-[remove,bg,spFadeOut_1000]
-[load_scene,GameOverScene]
+[load_scene,b_end]
+
 
