@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 CURRENT_MODEL_FILE = "current_model.txt"
 OLLAMA_API_URL = "http://localhost:11434/api/chat"
-DEFAULT_MODEL = "yao"
+DEFAULT_MODEL = "my-chat-model"
 
 # 獲取目前模型名稱
 def get_current_model():

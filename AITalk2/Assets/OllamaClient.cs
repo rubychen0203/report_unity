@@ -14,15 +14,14 @@ public class OllamaClient : MonoBehaviour
     public Button yaoButton;
     public Button llamaButton;
 
-    public VideoTrigger videoTrigger; // ✅ 拖進 Inspector
-
     private List<string> chatLog = new List<string>();
 
     void Start()
     {
         sendButton.onClick.AddListener(OnSendButtonClick);
-        yaoButton.onClick.AddListener(() => SwitchModel("yao"));
-        llamaButton.onClick.AddListener(() => SwitchModel("llama3"));
+
+        // 加入角色切換按鈕監聽
+        yaoButton.onClick.AddListener(() => SwitchModel("my-chat-model"));
 
         StartCoroutine(WaitForServerThenLoad());
     }
@@ -60,14 +59,8 @@ public class OllamaClient : MonoBehaviour
 
             if (responseText != null && result.success)
             {
-                string output = result.output.Trim();
-                chatLog.Add($"<b>AI：</b>{output}");
+                chatLog.Add($"<b>AI：</b>{result.output.Trim()}");
                 UpdateChatDisplay();
-
-                if (output.Contains("新聞"))
-                {
-                    videoTrigger?.PlayVideo();  // 播放影片
-                }
             }
         }
         else
@@ -136,6 +129,7 @@ public class OllamaClient : MonoBehaviour
         }
     }
 
+    // ⭐ 新增：切換角色模型
     void SwitchModel(string model)
     {
         string url = $"http://127.0.0.1:5000/loadNPC/{model}";
@@ -143,22 +137,25 @@ public class OllamaClient : MonoBehaviour
     }
 
     IEnumerator SendGetRequest(string url, string model)
-    {
-        UnityWebRequest request = UnityWebRequest.Get(url);
-        yield return request.SendWebRequest();
+{
+    UnityWebRequest request = UnityWebRequest.Get(url);
+    yield return request.SendWebRequest();
 
-        if (request.result == UnityWebRequest.Result.Success)
-        {
-            chatLog.Clear();
-            chatLog.Add($"<color=orange><b>（已切換角色為 {model}）</b></color>");
-            UpdateChatDisplay();
-            StartCoroutine(LoadHistory());
-        }
-        else
-        {
-            UnityEngine.Debug.LogError($"切換模型 {model} 失敗: " + request.error);
-        }
+    if (request.result == UnityWebRequest.Result.Success)
+    {
+        chatLog.Clear(); // 清除原本的對話紀錄
+        chatLog.Add($"<color=orange><b>（已切換角色為 {model}）</b></color>");
+        UpdateChatDisplay();
+
+        // ⭐ 載入新角色對應的歷史
+        StartCoroutine(LoadHistory());
     }
+    else
+    {
+        UnityEngine.Debug.LogError($"切換模型 {model} 失敗: " + request.error);
+    }
+}
+
 
     // === 資料結構 ===
     [System.Serializable]
