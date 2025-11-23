@@ -62,14 +62,8 @@ public class OllamaClient : MonoBehaviour
             if (responseText != null && result.success)
             {
                 string output = result.output.Trim();
-                chatLog.Add($"<b>AI：</b>{output}");
+                chatLog.Add($"<b>小美：</b>{output}");
                 UpdateChatDisplay();
-
-                // ✅ 保留原有的「新聞」影片播放
-                if (output.Contains("新聞"))
-                {
-                    videoTrigger?.PlayVideo();
-                }
 
                 // ✅ 新增：AI 回覆中也可以觸發「外星人」換場景
                 if (output.Contains("外星人"))
@@ -134,7 +128,7 @@ public class OllamaClient : MonoBehaviour
             foreach (var entry in chatHistory.history)
             {
                 chatLog.Add($"<b>你：</b>{entry.prompt}");
-                chatLog.Add($"<b>AI：</b>{entry.response}");
+                chatLog.Add($"<b>小美：</b>{entry.response}");
             }
 
             UpdateChatDisplay();
