@@ -366,6 +366,8 @@
 "Assets/intro/Assets/Flower/Scripts/FlowerSystem.cs"
 "Assets/intro/Assets/Flower/Scripts/UsageCase.cs"
 "Assets/intro/Assets/Scripts/IntroControler.cs"
+"Assets/ItemInspectTrigger.cs"
+"Assets/ItemInspectUI.cs"
 "Assets/ModeSwitcher.cs"
 "Assets/OllamaClient.cs"
 "Assets/PlayerMovement.cs"
@@ -381,6 +383,7 @@
 "Assets/TutorialController.cs"
 "Assets/UI.cs"
 "Assets/VideoTrigger.cs"
+"Assets/場景/DoorInteraction.cs"
 -langversion:9.0
 /deterministic
 /optimize+

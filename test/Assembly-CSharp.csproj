@@ -77,8 +77,11 @@
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\OllamaClient.cs" />
     <Compile Include="Assets\intro\Assets\Flower\Scripts\UsageCase.cs" />
+    <Compile Include="Assets\場景\DoorInteraction.cs" />
     <Compile Include="Assets\CameraFollow.cs" />
+    <Compile Include="Assets\ItemInspectTrigger.cs" />
     <Compile Include="Assets\VideoTrigger.cs" />
+    <Compile Include="Assets\ItemInspectUI.cs" />
     <Compile Include="Assets\UI.cs" />
     <Compile Include="Assets\theme\Assets\Scripts\OneController.cs" />
     <Compile Include="Assets\theme\Assets\Scripts\IntroCont.cs" />

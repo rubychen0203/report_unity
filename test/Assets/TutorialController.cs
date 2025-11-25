@@ -10,8 +10,6 @@ public class TutorialController : MonoBehaviour
     {
         // 一開始顯示提示
         tutorialPanel.SetActive(true);
-        // 5 秒後自動關閉
-        Invoke("HideTutorial", displayTime);
     }
 
     private void HideTutorial()
