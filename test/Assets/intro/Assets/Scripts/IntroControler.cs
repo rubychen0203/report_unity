@@ -47,9 +47,22 @@ public class IntroController : MonoBehaviour
     private void OnSkipClicked()
     {
         Debug.Log("玩家按下 Skip，停止對話並切換到 3D 場景");
+        ClearFlowerBackground();
         ChangeScene("SampleScene");
     }
 
+    private void ClearFlowerBackground()
+{
+    var objects = GameObject.FindObjectsOfType<GameObject>();
+
+    foreach (var obj in objects)
+    {
+        if (obj.name.Contains("BG") || obj.name.Contains("char")|| obj.name.Contains("bg"))
+        {
+            Destroy(obj);
+        }
+    }
+}
     // 🔹 清理所有 FlowerSystem 物件
     private void ClearFlowerObjects()
     {
