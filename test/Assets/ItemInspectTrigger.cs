@@ -4,46 +4,52 @@ using UnityEngine;
 
 public class ItemInspectTrigger : MonoBehaviour
 {
-    [Header("UI ª«¥ó")]
-    public GameObject interactHint;     // ¡u«ö E¡v´£¥Ü
-    public GameObject inspectUI;        // ÀËµø UI¡]Panel¡^
-    public ItemInspectUI itemInspectUI; // ±¾¤W RawImage + Text ªº¸}¥»
+    [Header("UI ç‰©ä»¶")]
+    public GameObject interactHint;     // æŒ‰ E æç¤º
+    public ItemInspectUI itemInspectUI; // æ§åˆ¶ RawImage + Text çš„ UI Script
 
-    [Header("ª««~¸ê®Æ")]
-    public Texture itemTexture;         // RawImage ¥Î Texture
+    [Header("ç‰©å“è¨­å®š")]
+    public Texture itemTexture;          // RawImage çš„åœ–ç‰‡
     [TextArea(3, 10)]
-    public string itemDescription;      // Åã¥Üªº»¡©ú¤å¦r
+    public string itemDescription;       // æ–‡å­—æè¿°
 
     private bool playerInRange = false;
+    private bool isInspecting = false;
+
     void LateUpdate()
     {
         if (Camera.main != null)
             transform.LookAt(Camera.main.transform);
     }
+
     void Start()
     {
         interactHint.SetActive(false);
-        inspectUI.SetActive(false);
+        itemInspectUI.Hide(); // åˆå§‹åŒ–éš±è—
     }
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        // ç©å®¶æŒ‰ E æ‰“é–‹æª¢è¦–
+        if (playerInRange && Input.GetKeyDown(KeyCode.E) && !isInspecting)
         {
-            // Åã¥ÜÀËµø UI
             itemInspectUI.Show(itemTexture, itemDescription);
             interactHint.SetActive(false);
-            Time.timeScale = 0f;
+            isInspecting = true;
+
+            // è§£é–æ»‘é¼ 
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        else if (inspectUI.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        // ç©å®¶æŒ‰ ESC é—œé–‰æª¢è¦–
+        else if (isInspecting && Input.GetKeyDown(KeyCode.Escape))
         {
-            // Ãö³¬ UI
-            inspectUI.SetActive(false);
-            Time.timeScale = 1f;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            itemInspectUI.Hide();
+            isInspecting = false;
+
+            // å¦‚æœç©å®¶ä»åœ¨ç¯„åœå…§ï¼Œæç¤ºæŒ‰ E
+            if (playerInRange)
+                interactHint.SetActive(true);
         }
     }
 
@@ -52,7 +58,8 @@ public class ItemInspectTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            interactHint.SetActive(true);
+            if (!isInspecting)
+                interactHint.SetActive(true);
         }
     }
 
