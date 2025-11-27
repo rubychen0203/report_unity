@@ -82,6 +82,7 @@
     <Compile Include="Assets\ItemInspectTrigger.cs" />
     <Compile Include="Assets\VideoTrigger.cs" />
     <Compile Include="Assets\ItemInspectUI.cs" />
+    <Compile Include="Assets\GameQuit.cs" />
     <Compile Include="Assets\UI.cs" />
     <Compile Include="Assets\theme\Assets\Scripts\OneController.cs" />
     <Compile Include="Assets\theme\Assets\Scripts\IntroCont.cs" />

@@ -23,7 +23,7 @@ public class OllamaClient : MonoBehaviour
     {
         sendButton.onClick.AddListener(OnSendButtonClick);
         yaoButton.onClick.AddListener(() => SwitchModel("yao"));
-        llamaButton.onClick.AddListener(() => SwitchModel("llama3"));
+        llamaButton.onClick.AddListener(() => SwitchModel("yao_00"));
 
         StartCoroutine(WaitForServerThenLoad());
     }
