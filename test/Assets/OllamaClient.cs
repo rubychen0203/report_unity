@@ -22,7 +22,7 @@ public class OllamaClient : MonoBehaviour
     void Start()
     {
         sendButton.onClick.AddListener(OnSendButtonClick);
-        yaoButton.onClick.AddListener(() => SwitchModel("yao"));
+        yaoButton.onClick.AddListener(() => SwitchModel("yao1207"));
         llamaButton.onClick.AddListener(() => SwitchModel("yao_00"));
 
         StartCoroutine(WaitForServerThenLoad());
@@ -33,6 +33,18 @@ public class OllamaClient : MonoBehaviour
         string prompt = inputField.text;
         if (!string.IsNullOrEmpty(prompt))
         {
+                // ⭐ 這裡檢查玩家輸入 ⭐
+        string[] keywords = { "你像外星人", "你是外星人", "你該不會是外星人"};
+        foreach (string word in keywords)
+        {
+            if (prompt.Contains(word))
+            {
+                Debug.Log($"玩家輸入包含關鍵字 '{word}'，切換場景 thema！");
+                StartCoroutine(DelayedSceneSwitch("thema", 2f)); // 延遲 2 秒
+                break; // 找到一個就跳出
+            }
+        }
+
             chatLog.Add($"<b>你：</b>{prompt}");
             UpdateChatDisplay();
 
@@ -65,12 +77,12 @@ public class OllamaClient : MonoBehaviour
                 chatLog.Add($"<b>小美：</b>{output}");
                 UpdateChatDisplay();
 
-                // ✅ 新增：AI 回覆中也可以觸發「外星人」換場景
-                if (output.Contains("外星人"))
-                {
-                    Debug.Log("AI 回覆提到『外星人』，切換到 thema 場景！");
-                    SceneManager.LoadScene("thema");
-                }
+                // 127.0.0.1
+                //if (output.Contains("外星人"))
+                //{
+                    //Debug.Log("AI 回覆提到『外星人』，切換到 thema 場景！");
+                    //SceneManager.LoadScene("thema");
+                //}
             }
         }
         else
@@ -90,6 +102,11 @@ public class OllamaClient : MonoBehaviour
             scroll.verticalNormalizedPosition = 0f;
         }
     }
+    IEnumerator DelayedSceneSwitch(string sceneName, float delay)
+{
+    yield return new WaitForSeconds(delay); // 等待指定秒數
+    SceneManager.LoadScene(sceneName);
+}
 
     IEnumerator WaitForServerThenLoad()
     {
