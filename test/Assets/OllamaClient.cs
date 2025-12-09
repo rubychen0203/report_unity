@@ -18,40 +18,47 @@ public class OllamaClient : MonoBehaviour
     public VideoTrigger videoTrigger; // ✅ 拖進 Inspector
 
     private List<string> chatLog = new List<string>();
-
+    private string currentNPCName = "小美";
     void Start()
     {
+        // 先清空歷史
+        StartCoroutine(ClearHistory());
         sendButton.onClick.AddListener(OnSendButtonClick);
-        yaoButton.onClick.AddListener(() => SwitchModel("yao1207"));
-        llamaButton.onClick.AddListener(() => SwitchModel("yao_00"));
+        yaoButton.onClick.AddListener(() => SwitchModel("MeMe"));
+        llamaButton.onClick.AddListener(() => SwitchModel("Gung"));
 
         StartCoroutine(WaitForServerThenLoad());
     }
 
     void OnSendButtonClick()
+{
+    string prompt = inputField.text;
+    if (!string.IsNullOrEmpty(prompt))
     {
-        string prompt = inputField.text;
-        if (!string.IsNullOrEmpty(prompt))
-        {
-                // ⭐ 這裡檢查玩家輸入 ⭐
-        string[] keywords = { "你像外星人", "你是外星人", "你該不會是外星人"};
+        // ⭐ 這裡檢查玩家輸入 ⭐
+        string[] keywords = { "你像外星人", "你是外星人", "你怎麼那麼像外星人", "你好像外星人", "你該不會是外星人" };
         foreach (string word in keywords)
         {
             if (prompt.Contains(word))
             {
-                Debug.Log($"玩家輸入包含關鍵字 '{word}'，切換場景 thema！");
-                StartCoroutine(DelayedSceneSwitch("thema", 2f)); // 延遲 2 秒
-                break; // 找到一個就跳出
+                Debug.Log($"玩家輸入包含關鍵字 '{word}'，觸發外星事件！");
+
+                // ⭐ 用 Coroutine 處理 AI 停頓 + 回覆 + 轉換劇情
+                StartCoroutine(AlienReactionSequence());
+
+                break;
             }
+
         }
 
-            chatLog.Add($"<b>你：</b>{prompt}");
-            UpdateChatDisplay();
+        chatLog.Add($"<b>你：</b>{prompt}");
+        UpdateChatDisplay();
 
-            StartCoroutine(SendOllamaCMD(prompt));
-            inputField.text = "";
-        }
+        StartCoroutine(SendOllamaCMD(prompt));
+        inputField.text = "";
     }
+}
+
 
     IEnumerator SendOllamaCMD(string prompt)
     {
@@ -74,7 +81,7 @@ public class OllamaClient : MonoBehaviour
             if (responseText != null && result.success)
             {
                 string output = result.output.Trim();
-                chatLog.Add($"<b>小美：</b>{output}");
+                chatLog.Add($"<b>{currentNPCName}：</b>{output}");
                 UpdateChatDisplay();
 
                 // 127.0.0.1
@@ -102,6 +109,22 @@ public class OllamaClient : MonoBehaviour
             scroll.verticalNormalizedPosition = 0f;
         }
     }
+    IEnumerator AlienReactionSequence()
+{
+    // ⭐ 第一步：先等 2 秒（AI 思考的感覺）
+    yield return new WaitForSeconds(2f);
+
+    // ⭐ 第二步：AI 回覆
+    chatLog.Add("<b>小美：</b>……我們出來談談。");
+    UpdateChatDisplay();
+
+    // ⭐ 第三步：再等 2 秒（像要帶你去某個地方）
+    yield return new WaitForSeconds(2f);
+
+    // ⭐ 第四步：切換到劇情場景
+    SceneManager.LoadScene("thema");
+}
+
     IEnumerator DelayedSceneSwitch(string sceneName, float delay)
 {
     yield return new WaitForSeconds(delay); // 等待指定秒數
@@ -145,7 +168,7 @@ public class OllamaClient : MonoBehaviour
             foreach (var entry in chatHistory.history)
             {
                 chatLog.Add($"<b>你：</b>{entry.prompt}");
-                chatLog.Add($"<b>小美：</b>{entry.response}");
+                chatLog.Add($"<b>{currentNPCName}：</b>{entry.response}");
             }
 
             UpdateChatDisplay();
@@ -157,10 +180,18 @@ public class OllamaClient : MonoBehaviour
     }
 
     void SwitchModel(string model)
-    {
-        string url = $"http://127.0.0.1:5000/loadNPC/{model}";
-        StartCoroutine(SendGetRequest(url, model));
-    }
+{
+    string url = $"http://127.0.0.1:5000/loadNPC/{model}";
+
+    // ⭐ 依模型指定 NPC 名字
+    if (model == "MeMe")
+        currentNPCName = "小美";
+    else if (model == "Gung")
+        currentNPCName = "阿光";   // 假設名字是阿光，你可以改成你要的
+
+    StartCoroutine(SendGetRequest(url, model));
+}
+
 
     IEnumerator SendGetRequest(string url, string model)
     {
@@ -170,7 +201,7 @@ public class OllamaClient : MonoBehaviour
         if (request.result == UnityWebRequest.Result.Success)
         {
             chatLog.Clear();
-            chatLog.Add($"<color=orange><b>（已切換角色為 {model}）</b></color>");
+            chatLog.Add($"<color=orange><b>(你正在跟 {model}聊天）</b></color>");
             UpdateChatDisplay();
             StartCoroutine(LoadHistory());
         }
@@ -179,6 +210,24 @@ public class OllamaClient : MonoBehaviour
             UnityEngine.Debug.LogError($"切換模型 {model} 失敗: " + request.error);
         }
     }
+
+    IEnumerator ClearHistory()
+    {
+        string url = "http://127.0.0.1:5000/clear_history";
+        UnityWebRequest request = UnityWebRequest.PostWwwForm(url, "");
+
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            Debug.Log("歷史紀錄已清除");
+        }
+        else
+        {
+            Debug.LogError("清除歷史失敗: " + request.error);
+        }
+    }
+
 
     // === 資料結構 ===
     [System.Serializable]
