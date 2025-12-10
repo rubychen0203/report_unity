@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -325,7 +325,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -333,16 +333,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: 46
   m_LastProjectPath: C:\Users\USER\Documents\report_unity1209\test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 92710000
-    m_LastClickedID: 29074
-    m_ExpandedIDs: 000000009271000000ca9a3bffffff7f
+    m_SelectedIDs: 96710000
+    m_LastClickedID: 29078
+    m_ExpandedIDs: 000000008a71000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -370,7 +370,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000008a710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ea59000096680000fc1f0000626a0000a85f00003c690000486900004469000048620000166e0000b26f00005e620000666500009e6500000000000070720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5eb8ffffbab8ffffacbaffffbabaffffc6baffffd4baffffdebaffffeabafffff6baffff04bbffff06c4ffff34ccffff90ccffff82ceffff90ceffff9cceffffaaceffffb4ceffffc0ceffffccceffffdaceffffdcd7ffff0ee1ffff60e1ffff6ae3ffff74e3ffff7ce3ffff86e3ffff8ce3ffff94e3ffff9ce3ffffa6e3ffffa4ecffff14fbffff76c60000a2cc00008ee60000baec0000
+      m_ExpandedIDs: 32cfffff7ccfffff8ed1ffffa0d1ffffb0d1ffffc2d1ffffd0d1ffffe0d1fffff0d1ffff02d2ffff08dbffff62ebffff8eecffff5cedffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -869,11 +869,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.034192007, y: -0.0035990516, z: 0.00010956034, w: 0.9994328}
     speed: 2
-    m_Value: {x: 0.03299189, y: -0.0035990945, z: 0.00010523852, w: 0.99944913}
+    m_Value: {x: 0.034191187, y: -0.0035989655, z: 0.00010955771, w: 0.99940884}
   m_Size:
     m_Target: 3190.541
     speed: 2
-    m_Value: 3340.8806
+    m_Value: 3190.541
   m_Ortho:
     m_Target: 0
     speed: 2
